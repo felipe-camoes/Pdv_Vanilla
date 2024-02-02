@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Pdv</title>
+  <!--3 tags meta-->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!--Estilos-->
+  <link rel="stylesheet" href="Css/reset.css" />
+  <link rel="stylesheet" href="Css/style.css" />
+  <!-- Fonte -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+</head>
+<body class="body">
+  <div class="container">
+    <div class="container__categorias">
+      <div class="categoria">Lanche</div>
+      <div class="categoria">Bebida</div>
+      <div class="categoria">Acompanhamento</div>
+      <div class="categoria">Sobremesa</div>
+    </div>
+    <div class="container__produtos"></div>
+    <div class="cadastro">
+      <div class="cadastro__produtos">
+        <div class="cadastro__container container__produto">
+          <label for="show__produto" class="label__texto--produto">Produto :</label>
+          <input type="text" name="" id="show__produto" class="area__produto texto__produto" readonly />
+        </div>
+        <div class="cadastro__container container__preco">
+          <label for="show__preco" class="label__texto--produto">Preço :</label>
+          <input type="text" name="" id="show__preco" class="area__produto texto__preco" value="R$ 0.00" readonly />
+        </div>
+        <div class="cadastro__container container__quantidade">
+          <label for="show__quantidade" class="label__texto--produto">Quantidade :</label>
+          <input type="number" name="" id="show__quantidade" class="area__produto texto__quantidade" min="1" max="30"
+            value="1" readonly />
+        </div>
+        <div class="cadastro__botoes">
+          <button class="botao__mais">+</button>
+          <button class="botao__menos">-</button>
+          <button class="botao__adicionar">Adicionar</button>
+        </div>
+      </div>
+      <div class="tela__produtos">
+        <div class="descricao__produtos">
+          <div class="label__produto">Item</div>
+          <div class="label__produto">Un</div>
+          <div class="label__produto">Total</div>
+          <div class="label__produto">Remover</div>
+        </div>
+        <div class="tela">
+        </div>
+      </div>
+      <div class="total__produtos">
+        <div class="total__produtos--form">
+          <label for="total" class="total__produtos--label">Valor Total :</label>
+          <input type="text" id="total" class="total__produtos--valor" value="R$ 0.00" />
+        </div>
+        <button class="botao__finalizar">Finalizar</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Display pedido -->
+  <div class="dispayP">
+    <div class="displayP__finalizacao">
+      <div class="displayP__label">
+        <div>PRODUTO :</div>
+        <div>Numero Pedido :</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Display fazendo -->
+  <div class="displayF">
+    <div class="displayF__label">Pronto :    </div>
+    <div class="displayF__label">Fazendo :    </div>
+    <div class="displayF__containerPronto"></div>
+    <div class="displayF__containerFazendo"></div>
+  </div>
+  </div>
+  <script src="Script/main.js"></script>
+</body>
+
+</html>
